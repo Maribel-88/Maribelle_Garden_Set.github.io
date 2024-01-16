@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
+#logo {
+    padding-top: 20px;
+    text-decoration: none;
+    color:#fff;
+}
+
+.navbar {
+    
+    
+    background-color: #8c240a;
+    background: linear-gradient(to bottom right, red, yellow);
+    padding: 25px 60px;
+    color: #fff;
+    
+ 
+}
+
+
+
+
+#heading {
+    background-color: #8c240a;
+}
+
+#callInfo {
+    padding-top: 20px;
+    text-align: right;
+    
+}
+
+
+
+#imgBorder {
+    background-color: #8c240a;
+    border-style: none;
+   
+}
+
+#contactInfo {
+    background-color: #8c240a;
+
+}
+    
+
+#footer {  
+    text-align: center;
+    background-color: #710d10;
+    margin-bottom: 0;  
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#imgFooter {
+   width: 200px;
+}
+
+
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-right: 20px;
+
+}
+
+.cartAmount {
+    position:absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+/* Shop items styles are here */
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 254px);
+    gap:60px;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    
+}
+
+@media (max-width: 1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 254px);
+    }
+}
+
+@media (max-width: 500px) {
+    .shop {
+        grid-template-columns: repeat(1, 254px);
+    }
+}
+
+.item {
+    border: 2px solid #710d10;
+    border-radius: 4px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding-top:10px;
+    gap: 10px;
+    padding-left: 2px;
+
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    
+}
+
+.btn-group {
+   
+    display: flex;
+    gap: 2px;
+    font-size: 16px;
+    width: 10px;
+
+  
+}
+
+.bi-dash-lg { 
+    color:#f77f00;
+}
+
+.bi-plus-lg {
+    color:rgb(9, 59, 2);
+}
+
+/**Style rules for label and some buttons**/
+
+.text-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.HomeBtn, .checkout, .removeAll {
+    background-color: #710d10;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#totalBill {
+    margin-bottom: -10px;
+}
+.checkout {
+    background-color: green;
+}
+
+.removeAll {
+    background-color: red;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight:bold ;
+    margin-right: 15px;
+    
+}
+/* style rules for shopping-cart*/
+
+.shopping-cart {
+   display:grid;
+   grid-template-columns: repeat(1, 350px);
+   justify-content: center;
+   gap: 15px;
+   margin-bottom: 20px;
+ 
+}
+
+@media (max-width: 500px) {
+    .shopping-cart {
+        grid-template-columns: repeat(1, 350px);
+    }
+}
+
+/* style rules for shopping-cart-item*/
+
+.cart-item {
+    border: 2px solid #710d10;
+    border-radius: 5px;
+    display: flex;
+    height: 150px;
+    
+}
+
+.title-price-x {
+    
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    
+    
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap:20px;
+   
+}
+
+.cart-item-price {
+    background-color: #710d10;
+    color:#fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+
+#orderStatus  { 
+    background-color: #f7f7f7;
+    height: 600px;
+}
+
+#refundID, #termsId, #aboutID, #contactDiv { 
+    background-color: #f7f7f7;
+    ;
+}
+
+/*gotop*/
+#goTop {
+    position: fixed;
+    right:15px;
+    bottom: 65px;
+
+    a{
+        background: linear-gradient(to bottom right, red, yellow);
+        color:white;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        display:flex;
+        transition: opacity 0.3s linear;
+        font-size: 30px;
+        &:hover {
+            opacity: 0.7;
+        }
+
+    }
+}
+
+
+/*-------------Deals Carousel styles--------------*/
+#discountDeals {
+    background: #f7f7f7;
+}
+
